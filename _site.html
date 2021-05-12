@@ -1,83 +1,135 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
-<title>David Clark | Personal Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-
+<title>David Clark | Personal Portfolio</title>
+<link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+<div>
   <!-- Navigation -->
-<div class="navbar">
-  <a class="active" href="#name">Home</a>
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#contact">Contact</a>
-</div>
-  <!-- Name Section -->
-  <section class="name" id="name">
-    <h2 class="name_header">David <span class="light">Clark</span></h2>
-    <p class="tagline">Athabasca University Student</p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#landing">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+		<li><a href="#projects">PROJECTS</a></li>
+		<li><a href="#skills">SKILLS</a></li>
+		<li><a href="#education">EDUCATION</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Landing Section -->
+  <section class="landing" id="landing">
+    <div class="header">David Clark</div>
+<p class="tagline">Athabasca University Student</p>
   </section>
-	
-  <!-- About Section -->
- 	<section class="about" id="about">
-    <h2>About</h2>
-	</section>
-
-	
-  <!-- Stats Experience Section -->
-<section class="experience" id="experience">
-    <h2>Experience</h2>
-	</section>
-
-	
-  <!-- Starts Projects Section -->
-<section class="projects" id="projects">
-    <h2>Projects</h2>
-	</section>
-
-	
-  <!-- Starts Skills Section -->
-<section class="skills" id="skills">
-    <h2>Skills</h2>
-	</section>
-
-	
-  <!-- Starts Education Section -->
-<section class="education" id="education">
-    <h2>Education</h2>
-	</section>
-
-	
-  <!-- Starts Contact Section -->
-<section class="contact" id="contact">
-    <h2>Contact</h2>
-	</section>
-	
-		<div class="form">
-		<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-		First Name:
-		<input type="text" name="firstname" placeholder="Your name..">
-		Last Name:<br>
-		<input type="text" name="lastname" placeholder="Your last name..">
-		E-mail:<br>
-		<input type="text" name="mail" placeholder="Your E-mail..">
-		Comment:<br>
-		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-		<input type="submit" value="Send">
-		</form>
-    </div>
-	
-		<div class="links">
-		<ul>
-			<li><a href="https://www.linkedin.com/in/david-clark-1100a593/">LinkedIn</a></li>
-		</ul>
 	</div>
-	
+<!-- About Section -->
+  <section class="section" id="about">
+    <h3 class="section-title">About</h3>
+<p class="section-text">Some paragragh about myself. I'm not good at this and will work on it. Will be added upon completion.</p>
+  </section>
+<!-- Experience Section -->
+  <section class="section" id="experience">
+    <h3 class="section-title">Experience</h3>
+	<div class="row">
+		  <div class="column-exp">
+		    <div class="card">
+				</div>
+		  </div>
+		  <div class="column-exp">
+		    <div class="card">
+				</div>
+		  </div>
+	  </div>
+  </section>
+
+<!-- Projects Section -->
+  <section class="section" id="projects">
+    <h3 class="section-title">Projects</h3>
+<p class="section-text">Projects are unavailable at this time. Would be displayed using a card effect, similar to experience, skills and education.</p>
+  </section>
+
+<!-- Skills Section -->
+  <section class="section" id="skills">
+    <h3 class="section-title">Skills</h3>
+		<div class="row">
+		  <div class="column">
+		    <div class="card">
+				<div>
+					<img src="assets/images/html5.png" alt="HTML5 Icon" class="responsive">				</div>
+				<h3> HTML5 </h3>
+				</div>
+		  </div>
+		  <div class="column">
+		    <div class="card">
+					<img src="assets/images/css3.png" alt="CSS3 Icon" class="responsive">
+					<h3> CSS3 </h3>
+				</div>
+		  </div>
+		  <div class="column">
+		    <div class="card">
+					<img src="assets/images/java.png" alt="JAVA Icon" class="responsive">
+					<h3> JAVA </h3>
+				</div>
+		  </div>
+		  <div class="column">
+		    <div class="card">
+					<img src="assets/images/python.png" alt="PYTHON Icon" class="responsive">
+					<h3> PYTHON </h3>
+				</div>
+		  </div>
+		</div>
+
+  </section>
+
+<!-- Education Section -->
+  <section class="section" id="education">
+    <h3 class="section-title">Education</h3>
+	  <div class="row">
+		  <div class="column-edu">
+		    <div class="card">
+					<h2>Centennial High School</h2>
+					<h3>High School Diploma </h3>
+					<h4>June 2008</h4>
+				</div>
+		  </div>
+		  <div class="column-edu">
+		    <div class="card">
+					<h2>Athabasca University</h2>
+					<h3>University Certificate - Computing and Information Systems </h3>
+					<h4>June 2021 - Present</h4>
+				</div>
+		  </div>
+	  </div>
+  </section>
+
+<!-- Contact Section -->
+  <section class="section" id="contact">
+    <h3 class="section-title">Contact</h3>
+
+<div class="form">
+	<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+	Name:<br>
+	<input type="text" name="firstname" placeholder="Your name.."><br>
+	E-mail:<br>
+	<input type="text" name="mail" placeholder="Your E-mail.."><br>
+	Comment:<br>
+	<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+	<input type="submit" value="Send">
+	</form>
+</div>
+	 
+	<div class="card-contact">
+		<a href="https://www.linkedin.com/in/david-clark-1100a593/"><img src="assets/images/linkedin.png" alt="LinkedIn Icon" title="Visit David on LinkedIn" style="width:100px;height:100px;"></a>
+		
+	</div>
+
+</section>
 </body>
 </html>
