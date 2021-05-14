@@ -8,35 +8,33 @@
 </head>
 
 <body>
-<div class="main">
-<div>
   <!-- Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#landing">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
-		<li><a href="#projects">PROJECTS</a></li>
-		<li><a href="#skills">SKILLS</a></li>
-		<li><a href="#education">EDUCATION</a></li>
-		<li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div id="sidenav" class="nav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#landing">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#experience">EXPERIENCE</a>
+		<a href="#projects">PROJECTS</a>
+		<a href="#skills">SKILLS</a>
+		<a href="#education">EDUCATION</a>
+		<a href="#contact">CONTACT</a>
+    </div>
   <!-- Landing Section -->
-  <section class="landing">
+
+<section class="landing" id="landing">
+	<div class="navbutton">
+<span style="color:grey;font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	</div>
     <div class="header">David Clark</div>
 <p class="tagline">Athabasca University Student</p>
   </section>
-	</div>
 <!-- About Section -->
-  <section class="section">
+  <section class="section" id="about">
     <h3 class="section-title">About</h3>
 <p class="section-text">Some paragragh about myself. I'm not good at this and will work on it. Will be added upon completion.</p>
   </section>
 <!-- Experience Section -->
-  <section class="section">
+  <section class="section" id="experience">
     <h3 class="section-title">Experience</h3>
 	<div class="row">
 		  <div class="column-exp">
@@ -51,13 +49,13 @@
   </section>
 
 <!-- Projects Section -->
-  <section class="section">
+  <section class="section" id="projects">
     <h3 class="section-title">Projects</h3>
 <p class="section-text">Projects are unavailable at this time. Would be displayed using a card effect, similar to experience, skills and education.</p>
   </section>
 
 <!-- Skills Section -->
-  <section class="section">
+  <section class="section" id="skills">
     <h3 class="section-title">Skills</h3>
 		<div class="row">
 		  <div class="column">
@@ -89,7 +87,7 @@
   </section>
 
 <!-- Education Section -->
-  <section class="section">
+  <section class="section" id="education">
     <h3 class="section-title">Education</h3>
 	  <div class="row">
 		  <div class="column-edu">
@@ -110,18 +108,38 @@
   </section>
 
 <!-- Contact Section -->
-  <section class="section">
+  <section class="section" id="contact">
     <h3 class="section-title">Contact</h3>
 	<div class="card-contact">
-	<a href="https://www.linkedin.com/in/david-clark-1100a593/"><img src="assets/images/linkedin.png" alt="LinkedIn Icon" class="responsive" style="width:100px;height:100px;" title="Visit David on LinkedIn"></a>
-	<a href="mailto:clark.david100717@gmail.com"><img src="assets/images/email.png" alt="Email icon" class="responsive" style="width:100px;height:100px;" title="Send David an email"></a>
-	<a href="https://github.com/dclark46"><img src="assets/images/github.png" alt="GitHub Icon Icon" class="responsive" style="width:100px;height:100px;" title="Visit David on GitHub"></a>
-
-
-		
+		<a href="https://www.linkedin.com/in/david-clark-1100a593/"><img src="assets/images/linkedin.png" alt="LinkedIn Icon" class="responsive" style="width:100px;height:100px;" title="Visit David on LinkedIn"></a>
+		<a href="mailto:clark.david100717@gmail.com"><img src="assets/images/email.png" alt="Email icon" class="responsive" style="width:100px;height:100px;" title="Send David an email"></a>
+		<a href="https://github.com/dclark46"><img src="assets/images/github.png" alt="GitHub Icon Icon" class="responsive" style="width:100px;height:100px;" title="Visit David on GitHub"></a>
 	</div>
-
 </section>
-</div>
+
+<script>
+function openNav() {
+  	document.getElementById("sidenav").style.width = "250px";
+  	document.getElementById("landing").style.marginLeft = "250px";
+	document.getElementById("about").style.marginLeft = "250px";
+	document.getElementById("experience").style.marginLeft = "250px";
+	document.getElementById("projects").style.marginLeft = "250px";
+	document.getElementById("skills").style.marginLeft = "250px";
+	document.getElementById("education").style.marginLeft = "250px";
+	document.getElementById("contact").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  	document.getElementById("sidenav").style.width = "0";
+  	document.getElementById("landing").style.marginLeft= "0";
+	document.getElementById("about").style.marginLeft = "0";
+	document.getElementById("experience").style.marginLeft = "0";
+	document.getElementById("projects").style.marginLeft = "0";
+	document.getElementById("skills").style.marginLeft = "0";
+	document.getElementById("education").style.marginLeft = "0";
+	document.getElementById("contact").style.marginLeft = "0";
+}
+</script>
+	
 </body>
 </html>
