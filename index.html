@@ -5,13 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>David Clark | Personal Portfolio</title>
 <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- This external CSS librbay is only used for the icons for the mobile view menu -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<!-- JQuery UI Progress bar -->
+<link href="assets/css/jquery-ui.css" rel="stylesheet">  
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMHMTLYX83"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QMHMTLYX83');
+</script>
 </head>
 	
 <body>
 	
+<!-- Navigation Section -->
 <header>
- <div class="header-1">
+ <div class="header">
 	 
 	 <div id="menu" class="fas fa-bars" onclick="navToggle();"></div>
 	 <nav class="navbar">
@@ -30,7 +45,7 @@
 </div>
 </header>
 
-  <!-- Landing Section -->
+<!-- Landing Section -->
 
 <span class="anchor" id="landing"></span>
 <div class="landing">
@@ -39,13 +54,15 @@
   </div>
 	
 <!-- About Section -->
-	<span class="anchor" id="about"></span>
-	<div class="section">
-    <h3 class="section-title">About</h3>
+	
+<span class="anchor" id="about"></span>
+<div class="section">
+<h3 class="section-title">About</h3>
 <p class="section-text">Some paragragh about myself. I'm not good at this and will work on it. Will be added upon completion.</p>
-  </div>
+</div>
 	
 <!-- Experience Section -->
+	
 <span class="anchor" id="experience"></span>
 <div class="section">
     <h3 class="section-title">Experience</h3>
@@ -62,6 +79,7 @@
   </div>
 
 <!-- Projects Section -->
+	
 <span class="anchor" id="projects"></span>
 <div class="section">
     <h3 class="section-title">Projects</h3>
@@ -69,32 +87,49 @@
 </div>
 
 <!-- Skills Section -->
+	
 <span class="anchor" id="skills"></span>
 <div class="section">
     <h3 class="section-title">Skills</h3>
 		<div class="row">
 		  <div class="column">
 		    <div class="card">
-					<img src="assets/images/html5.png" alt="HTML5 Icon" class="responsiveimg">
+				<img src="assets/images/html5.png" alt="HTML5 Icon" class="responsiveimg">
 				<h3> HTML </h3>
+				<div id="bars1">
+				<div id="pbar1"></div>
+				<div id="progresstext1"></div>
+				</div>
 				</div>
 		  </div>
 		  <div class="column">
 		    <div class="card">
 					<img src="assets/images/css3.png" alt="CSS3 Icon" class="responsiveimg">
 					<h3> CSS </h3>
+				<div id="bars2">
+				<div id="pbar2"></div>
+				<div id="progresstext2"></div>
+				</div>
 				</div>
 		  </div>
 		  <div class="column">
 		    <div class="card">
 					<img src="assets/images/java.png" alt="JAVA Icon" class="responsiveimg">
 					<h3> JAVA </h3>
+					<div id="bars3">
+					<div id="pbar3"></div>
+					<div id="progresstext3"></div>
+					</div>
 				</div>
 		  </div>
 		  <div class="column">
 		    <div class="card">
 					<img src="assets/images/python.png" alt="PYTHON Icon" class="responsiveimg">
 					<h3> PYTHON </h3>
+					<div id="bars4">
+					<div id="pbar4"></div>
+					<div id="progresstext4"></div>
+					</div>
 				</div>
 		  </div>
 		</div>
@@ -102,6 +137,7 @@
   </div>
 
 <!-- Education Section -->
+	
 <span class="anchor" id="education"></span>
 <div class="section">
     <h3 class="section-title">Education</h3>
@@ -124,6 +160,7 @@
   </div>
 
 <!-- Contact Section -->
+	
 <span class="anchor" id="contact"></span>
 <div class="section">
     <h3 class="section-title">Contact</h3>
@@ -134,11 +171,13 @@
 	</div>
 </div>
 
+<!-- The Javascript below opens and closes the mobile menu and makes the nav bar sticky in both viewports -->
+
 <script>
 
 let menu = document.querySelector('#menu')
 let navbar = document.querySelector('.navbar')
-let header1 = document.querySelector('.header-1');
+let header = document.querySelector('.header');
 
 function navToggle(){
 	
@@ -157,7 +196,17 @@ window.addEventListener('scroll',function(){
 		header1.classList.remove('sticky');
 	}
 });
-</script>
-		
+	
+$(function() {  
+	$( "#pbar1" ).progressbar({ value: 85 });
+	$( "#progresstext1").html("85%");
+	$( "#pbar2" ).progressbar({ value: 80 });
+	$( "#progresstext2").html("80%");
+	$( "#pbar3" ).progressbar({ value: 70 });
+	$( "#progresstext3").html("70%");
+	$( "#pbar4" ).progressbar({ value: 85 });
+	$( "#progresstext4").html("85%");
+}); 
+</script>		
 </body>
 </html>
