@@ -10,7 +10,7 @@ body {
 	overflow-x: hidden;
 }
 
-header .header-1 {
+header .header {
 	position: fixed;
 	display: flex;
 	align-items: center;
@@ -20,23 +20,23 @@ header .header-1 {
 	padding: 10px 20px;
 }
 
-header .header-1 .navbar ul{
+header .header .navbar ul{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
 }
 
-header .header-1 .navbar ul li{
+header .header .navbar ul li{
 	margin: 10px;
 }
 
-header .header-1 .navbar ul li a{
+header .header .navbar ul li a{
 	color: #fff;
 	font-size: 20px;
 }
 
-header .header-1 .navbar ul li a:hover{
+header .header .navbar ul li a:hover{
 	color: #fff8;
 
 }
@@ -48,7 +48,7 @@ header .header-1 .navbar ul li a:hover{
 	display: none;
 }
 
-header .header-1.sticky{
+header .header.sticky{
 	position: fixed;
 	top: 0; left: 0;
 }
@@ -141,7 +141,6 @@ header .header-1.sticky{
   	padding: 16px;
   	text-align: center;
   	background-color: #f1f1f1;
-
 }
 
 .column-exp {
@@ -179,6 +178,58 @@ header .header-1.sticky{
 .responsiveimg {
 	width: 50%;
 	height: auto;
+}
+
+#bars1 {
+	margin-top: 5px;
+    width: 190px; 
+    position:relative;
+}
+
+#progresstext1 {
+    position:absolute;
+    top:2px;
+    left:85px;
+	color: white;
+}
+
+#bars2 {
+	margin-top: 5px;
+    width: 190px; 
+    position:relative;
+}
+
+#progresstext2 {
+    position:absolute;
+    top:2px;
+    left:85px;
+	color: white;
+}
+
+#bars3 {
+	margin-top: 5px;
+    width: 190px; 
+    position:relative;
+}
+
+#progresstext3 {
+    position:absolute;
+    top:2px;
+    left:85px;
+	color: white;
+}
+
+#bars4 {
+	margin-top: 5px;
+    width: 190px; 
+    position:relative;
+}
+
+#progresstext4 {
+    position:absolute;
+    top:2px;
+    left:85px;
+	color: white;
 }
 
 @media (max-width:768px){
